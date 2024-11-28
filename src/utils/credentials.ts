@@ -65,7 +65,7 @@ export async function login(data: LoginCredentials) {
     if(isMatch)
     {
         await createSessionToken({sub: user.id, email: user.email});
-        redirect('/main/listar');
+        redirect('/main');
     }else{
         return {error: 'Usuário ou senhas incorretos'}
     }
