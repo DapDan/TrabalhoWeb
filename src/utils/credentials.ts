@@ -7,7 +7,7 @@ import ConexaoBD from "./conexao-bd";
 import {createSessionToken, deleteToken} from "@/utils/auth";
 import { boolean } from "zod";
 
-const arquivo = 'usuarios-db.json';
+const arquivo = 'users.json'; //variável com o nome do arquivo .json utilizado como "banco de dados" de usuários
 
 export interface LoginCredentials{
     email: string,
